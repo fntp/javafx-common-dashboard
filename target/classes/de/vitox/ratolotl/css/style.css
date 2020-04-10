@@ -1,0 +1,58 @@
+@import url("font.css");
+
+* {
+    -fx-effect: none !important;
+
+    -fx-font-smoothing-type: gray;
+    -fx-smooth: true;
+}
+
+.regular {
+    -fx-font-family: "Barlow Regular" !important;
+}
+
+.bold {
+    -fx-font-family: "Barlow ExtraBold" !important;
+}
+
+.root {
+    -fx-background-color: transparent;
+}
+
+.root Label {
+    -fx-text-fill: -fx-text-color;
+}
+
+.button, .window-actions-0, .window-actions-1, .window-actions-2 {
+    -fx-cursor: hand;
+}
+
+.sidebar {
+    -fx-pref-width: 220px;
+    -fx-background-color: -fx-sidebar-color;
+    -fx-background-radius: 0 0 0 15px;
+}
+
+.topbar {
+    -fx-pref-height: 64px;
+    -fx-background-color: -fx-topbar-color;
+    -fx-background-radius: 15px 15px 0 0;
+}
+
+.background {
+    -fx-background-color: -fx-bg-color;
+    -fx-background-radius: 0 0 15px;
+}
+
+.window-actions-0, .window-actions-1, .window-actions-2 {
+    -fx-stroke: none;
+    -fx-fill: -fx-bg-color;
+}
+
+.window-actions-2 {
+    -fx-fill: -fx-primary-color;
+}
+
+.window-actions-0:hover, .window-actions-1:hover {
+    -fx-fill: -fx-card-main-color;
+}

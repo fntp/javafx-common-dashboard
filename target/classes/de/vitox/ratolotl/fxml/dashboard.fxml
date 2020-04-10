@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.SVGPath?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.vitox.ratolotl.controller.DashboardController">
+   <left>
+      <VBox spacing="10.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0" spacing="24.0">
+               <children>
+                  <StackPane maxHeight="22.0" maxWidth="22.0" minHeight="22.0" minWidth="22.0">
+                     <children>
+                        <SVGPath content="M73.029,232.543a.572.572,0,0,0-.572.572v9.1H67.885v-4.967a2.858,2.858,0,0,0-5.717,0v4.967H57.6v-9.1a.572.572,0,1,0-1.143,0v9.67a.572.572,0,0,0,.572.572H62.74a.571.571,0,0,0,.569-.527.43.43,0,0,0,0-.045v-5.538a1.715,1.715,0,0,1,3.43,0v5.538a.42.42,0,0,0,0,.044.571.571,0,0,0,.569.528h5.716a.572.572,0,0,0,.572-.572v-9.67A.572.572,0,0,0,73.029,232.543M73.029,232.543a.572.572,0,0,0-.572.572v9.1H67.885v-4.967a2.858,2.858,0,0,0-5.717,0v4.967H57.6v-9.1a.572.572,0,1,0-1.143,0v9.67a.572.572,0,0,0,.572.572H62.74a.571.571,0,0,0,.569-.527.43.43,0,0,0,0-.045v-5.538a1.715,1.715,0,0,1,3.43,0v5.538a.42.42,0,0,0,0,.044.571.571,0,0,0,.569.528h5.716a.572.572,0,0,0,.572-.572v-9.67A.572.572,0,0,0,73.029,232.543Z" fill="WHITE" translateX="0.5" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="1.0" />
+                           </StackPane.margin>
+                        </SVGPath>
+                        <SVGPath content="M21.765,35.543,11.337,27.908a.571.571,0,0,0-.675,0L.233,35.543a.572.572,0,1,0,.675.922L11,29.078,21.09,36.466a.572.572,0,0,0,.675-.922Z" StackPane.alignment="TOP_CENTER">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                 <stops>
+                                    <Stop color="#29f599" />
+                                    <Stop color="#0cb7e1" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                           <StackPane.margin>
+                              <Insets top="1.0" />
+                           </StackPane.margin>
+                        </SVGPath>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="36.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <Label text="Home" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0" spacing="24.0">
+               <children>
+                  <StackPane maxHeight="22.0" maxWidth="22.0" minHeight="22.0" minWidth="22.0">
+                     <children>
+                        <SVGPath content="M128.687,689.25a.687.687,0,0,1-.688-.688v-3.884a2.044,2.044,0,0,1,1-1.777,15,15,0,0,1,14.492,0,2.044,2.044,0,0,1,1,1.776v3.885a.687.687,0,0,1-.688.688Zm1-5.156a.666.666,0,0,0-.314.584v3.2h13.75v-3.2a.665.665,0,0,0-.314-.583,13.6,13.6,0,0,0-13.122,0Zm1.749-9.281a4.812,4.812,0,1,1,4.812,4.812A4.819,4.819,0,0,1,131.438,674.813Zm1.375,0a3.437,3.437,0,1,0,3.437-3.438A3.441,3.441,0,0,0,132.813,674.813Z" fill="WHITE" StackPane.alignment="CENTER_LEFT" />
+                        <SVGPath content="M133.508,689.25v-1.374h2.75v-3.2a.665.665,0,0,0-.313-.584,12.762,12.762,0,0,0-2.955-1.219,3.344,3.344,0,0,0-1.175-1.166,14.346,14.346,0,0,0-1.319-.637,14.433,14.433,0,0,1,6.133,1.83,2.042,2.042,0,0,1,1,1.777v3.884a.686.686,0,0,1-.688.688ZM128,679.4a6.187,6.187,0,0,0,1.04-1.18,3.385,3.385,0,0,0,.343.032,3.438,3.438,0,0,0,0-6.875,3.367,3.367,0,0,0-.343.032,6.21,6.21,0,0,0-1.04-1.179,4.678,4.678,0,0,1,1.383-.229,4.813,4.813,0,0,1,0,9.625A4.707,4.707,0,0,1,128,679.4Z" StackPane.alignment="CENTER_RIGHT">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                 <stops>
+                                    <Stop color="#29f599" />
+                                    <Stop color="#0cb7e1" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </SVGPath>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="36.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <Label text="Users" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0" spacing="24.0">
+               <children>
+                  <StackPane maxHeight="22.0" maxWidth="22.0" minHeight="22.0" minWidth="22.0">
+                     <children>
+                        <SVGPath content="M209.138,1016a.438.438,0,0,1-.438-.438V994.438a.439.439,0,0,1,.438-.438h11.087a.44.44,0,0,1,.311.129l4.075,4.076a.439.439,0,0,1,.129.31V1011h-1.322V999.266h-3.411a.415.415,0,0,1-.411-.418v-3.47h-9.574V1014.7h13.4V1014h1.322v1.562a.439.439,0,0,1-.438.438Zm11.525-17.924h1.824l-1.824-1.856Z" fill="WHITE" translateX="0.5" StackPane.alignment="BOTTOM_LEFT" />
+                        <SVGPath content="M212.483,1001.062a1.067,1.067,0,0,1-1.066-1.066v-.437a.188.188,0,0,0-.188-.187h-2.091a.439.439,0,0,1-.438-.438v-2.805a.439.439,0,0,1,.438-.438h2.091a.188.188,0,0,0,.188-.187v-.437a1.064,1.064,0,0,1,1.817-.753l2.909,2.909a.44.44,0,0,1,0,.62l-2.909,2.909A1.06,1.06,0,0,1,212.483,1001.062Zm-1.063-2.55a1.063,1.063,0,0,1,.874,1.047V1000a.179.179,0,0,0,.116.174.2.2,0,0,0,.076.016.177.177,0,0,0,.128-.057l2.6-2.6-2.6-2.6a.177.177,0,0,0-.128-.057.2.2,0,0,0-.077.016.179.179,0,0,0-.116.174v.437a1.072,1.072,0,0,1-.967,1.059h-1.832v1.95Z" translateX="-0.5" StackPane.alignment="BOTTOM_RIGHT">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                 <stops>
+                                    <Stop color="#29f599" />
+                                    <Stop color="#0cb7e1" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </SVGPath>
+                        <VBox spacing="2.0" translateX="3.0" translateY="6.5">
+                           <children>
+                              <SVGPath content="M218.035,994.876a.438.438,0,1,1,0-.877H219a.438.438,0,0,1,0,.877Zm-8.9,0a.438.438,0,1,1,0-.877h7.253a.438.438,0,0,1,0,.877Z">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                       <stops>
+                                          <Stop color="#29f599" />
+                                          <Stop color="#0cb7e1" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </SVGPath>
+                              <SVGPath content="M77.919,220H68.058a.438.438,0,1,0,0,.876h9.861a.438.438,0,1,0,0-.876M77.919,220H68.058a.438.438,0,1,0,0,.876h9.861a.438.438,0,1,0,0-.876Z">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                       <stops>
+                                          <Stop color="#29f599" />
+                                          <Stop color="#0cb7e1" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </SVGPath>
+                              <SVGPath content="M77.919,220H68.058a.438.438,0,1,0,0,.876h9.861a.438.438,0,1,0,0-.876M77.919,220H68.058a.438.438,0,1,0,0,.876h9.861a.438.438,0,1,0,0-.876Z">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                       <stops>
+                                          <Stop color="#29f599" />
+                                          <Stop color="#0cb7e1" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </SVGPath>
+                              <SVGPath content="M77.919,220H68.058a.438.438,0,1,0,0,.876h9.861a.438.438,0,1,0,0-.876M77.919,220H68.058a.438.438,0,1,0,0,.876h9.861a.438.438,0,1,0,0-.876Z">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                       <stops>
+                                          <Stop color="#29f599" />
+                                          <Stop color="#0cb7e1" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </SVGPath>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="36.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <Label text="Builder" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0" spacing="24.0">
+               <children>
+                  <StackPane maxHeight="22.0" maxWidth="22.0" minHeight="22.0" minWidth="22.0">
+                     <children>
+                        <SVGPath content="M11.69,22H10.31a2.028,2.028,0,0,1-2.025-2.025v-.467a8.882,8.882,0,0,1-1.379-.572l-.331.331a2.025,2.025,0,0,1-2.865,0l-.976-.976a2.025,2.025,0,0,1,0-2.865l.331-.331a8.882,8.882,0,0,1-.572-1.379H2.025A2.028,2.028,0,0,1,0,11.69V10.31A2.028,2.028,0,0,1,2.025,8.284h.467a8.884,8.884,0,0,1,.572-1.379l-.331-.331a2.025,2.025,0,0,1,0-2.865l.976-.976a2.025,2.025,0,0,1,2.864,0l.331.331a8.89,8.89,0,0,1,1.379-.572V2.025A2.028,2.028,0,0,1,10.31,0H11.69a2.028,2.028,0,0,1,2.025,2.025v.467a8.881,8.881,0,0,1,1.379.572l.331-.331a2.025,2.025,0,0,1,2.865,0l.976.976a2.025,2.025,0,0,1,0,2.865l-.331.331a8.882,8.882,0,0,1,.572,1.379h.467A2.028,2.028,0,0,1,22,10.31V11.69a2.028,2.028,0,0,1-2.025,2.025h-.467a8.884,8.884,0,0,1-.572,1.379l.331.331a2.025,2.025,0,0,1,0,2.865l-.976.976a2.025,2.025,0,0,1-2.864,0l-.331-.331a8.89,8.89,0,0,1-1.379.572v.467A2.028,2.028,0,0,1,11.69,22Zm-4.57-4.418A7.6,7.6,0,0,0,9.09,18.4a.644.644,0,0,1,.483.624v.952a.737.737,0,0,0,.736.736H11.69a.737.737,0,0,0,.736-.736v-.952a.644.644,0,0,1,.483-.624,7.6,7.6,0,0,0,1.969-.817.645.645,0,0,1,.784.1l.674.674a.736.736,0,0,0,1.041,0l.977-.977a.736.736,0,0,0,0-1.041l-.674-.674a.645.645,0,0,1-.1-.784A7.6,7.6,0,0,0,18.4,12.91a.645.645,0,0,1,.624-.483h.952a.737.737,0,0,0,.736-.736V10.31a.737.737,0,0,0-.736-.736h-.952A.645.645,0,0,1,18.4,9.09a7.6,7.6,0,0,0-.817-1.969.645.645,0,0,1,.1-.784l.674-.674a.736.736,0,0,0,0-1.041l-.976-.976a.736.736,0,0,0-1.041,0l-.674.674a.645.645,0,0,1-.784.1A7.6,7.6,0,0,0,12.91,3.6a.644.644,0,0,1-.483-.624V2.025a.737.737,0,0,0-.736-.736H10.31a.737.737,0,0,0-.736.736v.952A.644.644,0,0,1,9.09,3.6a7.6,7.6,0,0,0-1.969.817.645.645,0,0,1-.784-.1l-.674-.674a.736.736,0,0,0-1.041,0l-.977.977a.736.736,0,0,0,0,1.041l.674.674a.645.645,0,0,1,.1.784A7.6,7.6,0,0,0,3.6,9.09a.645.645,0,0,1-.624.483H2.025a.737.737,0,0,0-.736.736V11.69a.737.737,0,0,0,.736.736h.952a.645.645,0,0,1,.624.483,7.6,7.6,0,0,0,.817,1.969.645.645,0,0,1-.1.784l-.674.674a.736.736,0,0,0,0,1.041l.976.976a.736.736,0,0,0,1.041,0l.674-.674A.648.648,0,0,1,7.121,17.582Z" fill="WHITE" />
+                        <SVGPath content="M149.387,154.173a4.787,4.787,0,1,1,4.787-4.787A4.792,4.792,0,0,1,149.387,154.173Zm0-8.284a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,149.387,145.889Z">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                 <stops>
+                                    <Stop color="#29f599" />
+                                    <Stop color="#0cb7e1" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </SVGPath>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="36.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <Label text="Options" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="62.0" />
+         </padding></VBox>
+   </left>
+   <top>
+      <HBox fx:id="hbxTopbar" alignment="CENTER_LEFT" styleClass="topbar">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="6.0">
+               <children>
+                  <StackPane />
+                  <Label styleClass="bold" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" spacing="6.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Circle fx:id="minAction" radius="10.0" styleClass="window-actions-0" />
+                  <Circle fx:id="maxAction" radius="10.0" styleClass="window-actions-1" />
+                  <Circle fx:id="closeAction" radius="10.0" styleClass="window-actions-2" />
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="36.0" />
+         </padding></HBox>
+   </top>
+   <center>
+      <StackPane styleClass="background">
+         <padding>
+            <Insets left="110.0" top="42.0" />
+         </padding>
+         <children>
+            <Label text="Label" StackPane.alignment="TOP_LEFT" />
+         </children></StackPane>
+   </center>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+      <URL value="@../css/theme/standard/dark.css" />
+   </stylesheets>
+</BorderPane>
