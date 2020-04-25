@@ -20,39 +20,25 @@
 }
 
 .root Label {
-    -fx-text-fill: -fx-text-color;
+    -fx-text-fill: -fx-primary-text-color;
 }
 
-.button, .window-actions-0, .window-actions-1, .window-actions-2 {
+.button, .window-actions {
     -fx-cursor: hand;
 }
 
 .sidebar {
-    -fx-pref-width: 220px;
+    -fx-pref-width: 230px;
     -fx-background-color: -fx-sidebar-color;
-    -fx-background-radius: 0 0 0 15px;
-}
-
-.topbar {
-    -fx-pref-height: 64px;
-    -fx-background-color: -fx-topbar-color;
-    -fx-background-radius: 15px 15px 0 0;
+    -fx-background-radius: 16px 0 0 16px;
 }
 
 .background {
     -fx-background-color: -fx-bg-color;
-    -fx-background-radius: 0 0 15px;
+    -fx-background-radius: 0 16px 16px 0;
 }
 
-.window-actions-0, .window-actions-1, .window-actions-2 {
+.window-actions {
     -fx-stroke: none;
     -fx-fill: -fx-bg-color;
-}
-
-.window-actions-2 {
-    -fx-fill: -fx-primary-color;
-}
-
-.window-actions-0:hover, .window-actions-1:hover {
-    -fx-fill: -fx-card-main-color;
 }

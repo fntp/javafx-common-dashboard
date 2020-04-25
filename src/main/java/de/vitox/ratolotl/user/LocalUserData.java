@@ -1,5 +1,7 @@
 package de.vitox.ratolotl.user;
 
+import de.vitox.ratolotl.Main;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,7 +13,7 @@ public class LocalUserData {
 
     private static final String TEMP_PATH = System.getProperty("java.io.tmpdir");
 
-    private static final File FOLDER = new File(TEMP_PATH + "/Ratolotl"),
+    private static final File FOLDER = new File(TEMP_PATH + "/" + Main.getInstance().getName()),
             PROPERTIES_FILE = new File(FOLDER, "data.properties");
 
     private static Properties properties = null;

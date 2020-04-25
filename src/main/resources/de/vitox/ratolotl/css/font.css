@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Barlow Regular";
-    src: url("../font/Barlow-ExtraBold.ttf");
+    src: url("../font/barlow/Barlow-ExtraBold.ttf");
 }
 
 @font-face {
     font-family: "Barlow ExtraBold";
-    src: url("../font/Barlow-ExtraBold.ttf");
+    src: url("../font/barlow/Barlow-ExtraBold.ttf");
 }
