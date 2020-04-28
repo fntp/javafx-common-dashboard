@@ -17,7 +17,7 @@ import lombok.*;
 @Getter
 public class Main extends Application {
 
-    private final String name = "Ratolotl";
+    private final String name = "Ratolotl", version = "1.0";
 
     @Getter
     private static Main instance;

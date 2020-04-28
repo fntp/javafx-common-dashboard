@@ -1,6 +1,7 @@
 *  {
+    -fx-regular-font: "Barlow Regular";
+
     -fx-primary-color: linear-gradient(to bottom, #0CB7E1, #29F599);
-    -fx-secondary-color: linear-gradient(to bottom, #9761FF, #7C30FE);
 
     -fx-card-main-color: #38364F;
     -fx-card-color: linear-gradient(to bottom, -fx-card-main-color, derive(-fx-card-main-color, -4%));
@@ -8,7 +9,6 @@
     -fx-bg-color: derive(-fx-card-main-color, -20%);
 
     -fx-sidebar-color: linear-gradient(to bottom, derive(-fx-bg-color, -8%), -fx-card-main-color);
-    -fx-topbar-color: derive(-fx-card-main-color, -10%);
 
     -fx-text-color: #FFFFFF;
 }

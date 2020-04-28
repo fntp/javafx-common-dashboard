@@ -28,13 +28,13 @@ public class MySQL {
 
     private boolean connect() {
         InputStream inputStream = getClass().getResourceAsStream("/de/vitox/ratolotl/data/mysql.properties");
+        Config config = new Config(inputStream);
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            Config config = new Config(inputStream);
             this.connection = DriverManager.getConnection("jdbc:mysql://" + config.getMySQLHost() + ":" + config.getMySQLPort() + "/" +
-                    config.getMySQLDatabase() + "?user=" + config.getMySQLUser() + "&password=" + config.getMySQLPassword() + "&autoReconnect=true");
+                    config.getMySQLDatabase() + "?user=" + config.getMySQLUser() + "&password=" + config.getMySQLPassword() + "&autoReconnect=true&serverTimezone=UTC");
         } catch (Exception e) {
             System.out.println("MySQL: Connection error!");
             e.printStackTrace();

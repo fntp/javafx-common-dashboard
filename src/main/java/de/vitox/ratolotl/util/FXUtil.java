@@ -1,29 +1,23 @@
 package de.vitox.ratolotl.util;
 
-import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.input.*;
+import javafx.event.EventType;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
-import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
+import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
+import static javafx.scene.input.MouseEvent.*;
+
 public class FXUtil {
+
+    private static int winWidth = 1240, winHeight = 704;
 
     public static void movable(Stage stage, Pane pane) {
         AtomicReference<Double> xOffset = new AtomicReference<>(0D);
         AtomicReference<Double> yOffset = new AtomicReference<>(0D);
-
-        pane.setOnMouseClicked(e -> {
-            if (e.getButton().equals(MouseButton.PRIMARY)) {
-                if (e.getClickCount() == 2) {
-                    stage.setMaximized(!stage.isMaximized());
-                }
-            }
-        });
 
         pane.setOnMousePressed(e -> {
             xOffset.set(e.getSceneX());
@@ -36,50 +30,17 @@ public class FXUtil {
         });
     }
 
-    public static void windowActions(Stage stage, Circle min, Circle max, Circle close) {
+    public static void windowActions(Stage stage, Pane min, Pane close) {
         min.setOnMouseClicked(e -> stage.setIconified(true));
-        max.setOnMouseClicked(e -> stage.setMaximized(!stage.isMaximized()));
         close.setOnMouseClicked(e -> System.exit(0));
     }
 
-    public static void resizable(Stage stage) {
-        addResizeListener(stage, 1280, 720, Double.MAX_VALUE, Double.MAX_VALUE);
-    }
+    public static void resizable (Stage stage) {
+        ResizeListener resizeListener = new ResizeListener(stage, winWidth, winHeight);
+        Scene scene = stage.getScene();
 
-    private static void addResizeListener(Stage stage, double minWidth, double minHeight, double maxWidth, double maxHeight) {
-        ResizeListener resizeListener = new ResizeListener(stage);
-
-        stage.getScene().addEventHandler(MouseEvent.MOUSE_MOVED, resizeListener);
-        stage.getScene().addEventHandler(MouseEvent.MOUSE_PRESSED, resizeListener);
-        stage.getScene().addEventHandler(MouseEvent.MOUSE_DRAGGED, resizeListener);
-        stage.getScene().addEventHandler(MouseEvent.MOUSE_EXITED, resizeListener);
-        stage.getScene().addEventHandler(MouseEvent.MOUSE_EXITED_TARGET, resizeListener);
-
-        resizeListener.setMinWidth(minWidth);
-        resizeListener.setMinHeight(minHeight);
-        resizeListener.setMaxWidth(maxWidth);
-        resizeListener.setMaxHeight(maxHeight);
-
-        ObservableList<Node> children = stage.getScene().getRoot().getChildrenUnmodifiable();
-        for (Node child : children) {
-            addListenerDeeply(child, resizeListener);
-        }
-    }
-
-    private static void addListenerDeeply(Node node, EventHandler<MouseEvent> listener) {
-        node.addEventHandler(MouseEvent.MOUSE_MOVED, listener);
-        node.addEventHandler(MouseEvent.MOUSE_PRESSED, listener);
-        node.addEventHandler(MouseEvent.MOUSE_DRAGGED, listener);
-        node.addEventHandler(MouseEvent.MOUSE_EXITED, listener);
-        node.addEventHandler(MouseEvent.MOUSE_EXITED_TARGET, listener);
-
-        if (node instanceof Parent) {
-            Parent parent = (Parent) node;
-            ObservableList<Node> children = parent.getChildrenUnmodifiable();
-            for (Node child : children) {
-                addListenerDeeply(child, listener);
-            }
-        }
+        EventType[] mouseEvents = new EventType[]{MOUSE_MOVED, MOUSE_PRESSED, MOUSE_DRAGGED, MOUSE_EXITED, MOUSE_EXITED_TARGET};
+        Arrays.stream(mouseEvents).forEach(type -> scene.addEventHandler(type, resizeListener));
     }
 
 }

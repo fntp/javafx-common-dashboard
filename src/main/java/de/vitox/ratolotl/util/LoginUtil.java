@@ -11,21 +11,20 @@ public class LoginUtil {
             return password;
         }
 
-        String generatedPassword = null;
-
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-512");
             byte[] bytes = md.digest(password.getBytes(StandardCharsets.UTF_8));
             StringBuilder sb = new StringBuilder();
+
             for (byte aByte : bytes) {
                 sb.append(Integer.toString((aByte & 0xff) + 0x100, 16).substring(1));
             }
-            generatedPassword = sb.toString();
+
+            return sb.toString();
         } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
-        return generatedPassword;
     }
 
 }

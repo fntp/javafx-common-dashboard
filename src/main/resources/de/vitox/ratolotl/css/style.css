@@ -7,14 +7,6 @@
     -fx-smooth: true;
 }
 
-.regular {
-    -fx-font-family: "Barlow Regular" !important;
-}
-
-.bold {
-    -fx-font-family: "Barlow ExtraBold" !important;
-}
-
 .root {
     -fx-background-color: transparent;
 }
@@ -23,7 +15,7 @@
     -fx-text-fill: -fx-primary-text-color;
 }
 
-.button, .window-actions {
+.button, .window-actions, .sidebar-tab {
     -fx-cursor: hand;
 }
 
@@ -31,6 +23,48 @@
     -fx-pref-width: 230px;
     -fx-background-color: -fx-sidebar-color;
     -fx-background-radius: 16px 0 0 16px;
+}
+
+.sidebar-tab Label {
+    -fx-text-fill: -fx-secondary-text-color;
+}
+
+.logo-bg {
+    -fx-fill: -fx-bg-color;
+}
+
+.logo-stroke {
+    -fx-fill: -fx-separator-color;
+}
+
+.logo-text {
+    -fx-fill: -fx-primary-text-color;
+}
+
+.logo-line {
+    -fx-fill: transparent;
+    -fx-stroke: -fx-primary-color;
+    -fx-stroke-width: 2.3;
+}
+
+.icon-selected {
+    -fx-fill: -fx-primary-color;
+}
+
+.icon-1, .icon-2 {
+    -fx-fill: -fx-secondary-text-color;
+}
+
+.icon-2 {
+    -fx-opacity: .4;
+}
+
+.selected Label {
+    -fx-text-fill: -fx-primary-text-color;
+}
+
+.selected SVGPath {
+    -fx-fill: -fx-primary-color;
 }
 
 .background {
