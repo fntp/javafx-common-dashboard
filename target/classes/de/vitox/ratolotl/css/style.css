@@ -7,52 +7,72 @@
     -fx-smooth: true;
 }
 
-.regular {
-    -fx-font-family: "Barlow Regular" !important;
-}
-
-.bold {
-    -fx-font-family: "Barlow ExtraBold" !important;
-}
-
 .root {
     -fx-background-color: transparent;
 }
 
 .root Label {
-    -fx-text-fill: -fx-text-color;
+    -fx-text-fill: -fx-primary-text-color;
 }
 
-.button, .window-actions-0, .window-actions-1, .window-actions-2 {
+.button, .window-actions, .sidebar-tab {
     -fx-cursor: hand;
 }
 
 .sidebar {
-    -fx-pref-width: 220px;
+    -fx-pref-width: 230px;
     -fx-background-color: -fx-sidebar-color;
-    -fx-background-radius: 0 0 0 15px;
+    -fx-background-radius: 16px 0 0 16px;
 }
 
-.topbar {
-    -fx-pref-height: 64px;
-    -fx-background-color: -fx-topbar-color;
-    -fx-background-radius: 15px 15px 0 0;
+.sidebar-tab Label {
+    -fx-text-fill: -fx-secondary-text-color;
+}
+
+.logo-bg {
+    -fx-fill: -fx-bg-color;
+}
+
+.logo-stroke {
+    -fx-fill: -fx-separator-color;
+}
+
+.logo-text {
+    -fx-fill: -fx-primary-text-color;
+}
+
+.logo-line {
+    -fx-fill: transparent;
+    -fx-stroke: -fx-primary-color;
+    -fx-stroke-width: 2.3;
+}
+
+.icon-selected {
+    -fx-fill: -fx-primary-color;
+}
+
+.icon-1, .icon-2 {
+    -fx-fill: -fx-secondary-text-color;
+}
+
+.icon-2 {
+    -fx-opacity: .4;
+}
+
+.selected Label {
+    -fx-text-fill: -fx-primary-text-color;
+}
+
+.selected SVGPath {
+    -fx-fill: -fx-primary-color;
 }
 
 .background {
     -fx-background-color: -fx-bg-color;
-    -fx-background-radius: 0 0 15px;
+    -fx-background-radius: 0 16px 16px 0;
 }
 
-.window-actions-0, .window-actions-1, .window-actions-2 {
+.window-actions {
     -fx-stroke: none;
     -fx-fill: -fx-bg-color;
-}
-
-.window-actions-2 {
-    -fx-fill: -fx-primary-color;
-}
-
-.window-actions-0:hover, .window-actions-1:hover {
-    -fx-fill: -fx-card-main-color;
 }

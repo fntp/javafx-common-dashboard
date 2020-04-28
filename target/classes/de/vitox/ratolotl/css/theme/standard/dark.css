@@ -1,14 +1,15 @@
 *  {
-    -fx-primary-color: linear-gradient(to bottom, #0CB7E1, #29F599);
-    -fx-secondary-color: linear-gradient(to bottom, #9761FF, #7C30FE);
+    -fx-primary-color: #e76086;
+    -fx-primary-gradient-color: linear-gradient(to right, -fx-primary-color, #d87c86);
 
-    -fx-card-main-color: #38364F;
-    -fx-card-color: linear-gradient(to bottom, -fx-card-main-color, derive(-fx-card-main-color, -4%));
+    -fx-separator-color: #282e3f;
+    -fx-stroke-color: derive(-fx-separator-color, -6%);
 
-    -fx-bg-color: derive(-fx-card-main-color, -20%);
+    -fx-card-color: #1f2632;
+    -fx-bg-color: derive(-fx-card-color, -15%);
 
-    -fx-sidebar-color: linear-gradient(to bottom, derive(-fx-bg-color, -8%), -fx-card-main-color);
-    -fx-topbar-color: derive(-fx-card-main-color, -10%);
+    -fx-sidebar-color: linear-gradient(to bottom, -fx-stroke-color, -fx-bg-color);
 
-    -fx-text-color: #FFFFFF;
+    -fx-primary-text-color: #ffffff;
+    -fx-secondary-text-color: #9999aa;
 }
