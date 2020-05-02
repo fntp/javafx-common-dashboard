@@ -5,7 +5,6 @@ import de.vitox.ratolotl.tab.*;
 import de.vitox.ratolotl.util.FXUtil;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 
@@ -38,21 +37,8 @@ public class DashboardController implements Initializable {
         vbxMenuTabs.getChildren().add(tabs[0]);
 
         for (int i = 0; i < tabs.length; ++i) {
-            tabSwitch(vbxMenuNavigation.getChildren().get(i), tabs[i]);
+            FXUtil.tabSwitch(vbxMenuNavigation.getChildren().get(i), tabs[i], vbxMenuNavigation, vbxMenuTabs);
         }
-    }
-
-    public void tabSwitch(Node navigation, Pane tab) {
-        navigation.setOnMouseClicked(e -> {
-            navigation.getStyleClass().add("selected");
-
-            vbxMenuNavigation.getChildren().stream().filter(n -> !n.equals(navigation)).forEach(n ->
-                    n.getStyleClass().remove("selected"));
-
-            vbxMenuTabs.getChildren().clear();
-
-            vbxMenuTabs.getChildren().add(tab);
-        });
     }
 
 }
