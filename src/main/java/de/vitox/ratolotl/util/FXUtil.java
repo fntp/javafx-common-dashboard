@@ -39,7 +39,7 @@ public class FXUtil {
         close.setOnMouseClicked(e -> System.exit(0));
     }
 
-    public static void resizable (Stage stage) {
+    public static void resizable(Stage stage) {
         ResizeListener resizeListener = new ResizeListener(stage, winWidth, winHeight);
         Scene scene = stage.getScene();
 
@@ -48,12 +48,12 @@ public class FXUtil {
     }
 
     public static TableColumn<InfectedUser, String> column(String title, Function<InfectedUser, StringProperty> property) {
-        TableColumn<InfectedUser, String> col = new TableColumn<>(title);
+        TableColumn<InfectedUser, String> column = new TableColumn<>(title);
 
-        col.setCellValueFactory(cellData -> property.apply(cellData.getValue()));
-        col.setResizable(false);
+        column.setCellValueFactory(cellData -> property.apply(cellData.getValue()));
+//        column.setResizable(false);
 
-        return col;
+        return column;
     }
 
     public static void tabSwitch(Node navigation, Pane tab, Pane navigationContainer, Pane tabContainer) {

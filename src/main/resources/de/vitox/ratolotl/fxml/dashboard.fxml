@@ -70,9 +70,9 @@
     <center>
         <StackPane styleClass="background">
              <StackPane fx:id="stckTopBar" maxHeight="45.0" minHeight="45.0" StackPane.alignment="TOP_LEFT" />
-            <VBox fx:id="vbxMenuTabs">
+            <VBox fx:id="vbxMenuTabs" styleClass="menu-tab">
             <StackPane.margin>
-               <Insets top="45.0" />
+               <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
             </StackPane.margin>
             </VBox>
         </StackPane>

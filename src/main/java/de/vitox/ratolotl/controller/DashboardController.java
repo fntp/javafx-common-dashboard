@@ -5,10 +5,12 @@ import de.vitox.ratolotl.tab.*;
 import de.vitox.ratolotl.util.FXUtil;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 
 import java.net.URL;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
@@ -37,6 +39,7 @@ public class DashboardController implements Initializable {
         vbxMenuTabs.getChildren().add(tabs[0]);
 
         for (int i = 0; i < tabs.length; ++i) {
+            VBox.setVgrow(tabs[i], Priority.ALWAYS);
             FXUtil.tabSwitch(vbxMenuNavigation.getChildren().get(i), tabs[i], vbxMenuNavigation, vbxMenuTabs);
         }
     }

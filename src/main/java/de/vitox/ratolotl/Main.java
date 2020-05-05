@@ -13,6 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import lombok.*;
+import org.fxmisc.cssfx.CSSFX;
 
 @Getter
 public class Main extends Application {
@@ -32,6 +33,8 @@ public class Main extends Application {
     private Scene scene;
 
     public void start(Stage stage) throws Exception {
+        CSSFX.start();
+
         instance = this;
 
         this.stage = stage;
