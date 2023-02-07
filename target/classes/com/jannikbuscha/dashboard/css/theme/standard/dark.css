@@ -1,0 +1,13 @@
+*  {
+    -fx-primary-color: #e76086;
+
+    -fx-separator-color: #282e3f;
+
+    -fx-card-color: #1f2632;
+    -fx-bg-color: derive(-fx-card-color, -15%);
+
+    -fx-sidebar-color: linear-gradient(to bottom, derive(-fx-separator-color, -6%), -fx-bg-color);
+
+    -fx-primary-text-color: #ffffff;
+    -fx-secondary-text-color: #9999aa;
+}

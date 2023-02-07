@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>ratolotl-frontend</artifactId>
+    <groupId>com.jannikbuscha</groupId>
+    <artifactId>dashboard</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -29,46 +29,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- JFoenix -->
-        <dependency>
-            <groupId>com.jfoenix</groupId>
-            <artifactId>jfoenix</artifactId>
-            <version>8.0.8</version>
-        </dependency>
-
-        <!-- AnimateFX -->
-        <dependency>
-            <groupId>io.github.typhon0</groupId>
-            <artifactId>AnimateFX</artifactId>
-            <version>1.2.1</version>
-        </dependency>
-
-        <!-- TileFX -->
-        <dependency>
-            <groupId>eu.hansolo</groupId>
-            <artifactId>tilesfx</artifactId>
-            <version>11.32</version>
-        </dependency>
-
-        <!-- Guava -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>28.2-jre</version>
-        </dependency>
-
         <!-- cssfx -->
         <dependency>
             <groupId>org.fxmisc.cssfx</groupId>
             <artifactId>cssfx</artifactId>
             <version>1.1.1</version>
-        </dependency>
-
-        <!-- MySQL Connector -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.19</version>
         </dependency>
 
     </dependencies>

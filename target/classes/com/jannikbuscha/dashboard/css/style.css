@@ -1,0 +1,113 @@
+@import url("font.css");
+
+* {
+    -fx-effect: none !important;
+
+    -fx-font-smoothing-type: gray;
+    -fx-smooth: true;
+}
+
+.root {
+    -fx-background-color: transparent;
+}
+
+.root Label {
+    -fx-text-fill: -fx-primary-text-color;
+}
+
+.button, .window-actions, .sidebar-tab {
+    -fx-cursor: hand;
+}
+
+.sidebar {
+    -fx-pref-width: 230px;
+    -fx-background-color: -fx-sidebar-color;
+    -fx-background-radius: 16px 0 0 16px;
+}
+
+.sidebar-tab Label {
+    -fx-text-fill: -fx-secondary-text-color;
+}
+
+.logo {
+    -fx-text-fill: -fx-primary-color;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+
+.icon-selected {
+    -fx-fill: -fx-primary-color;
+}
+
+.icon-1, .icon-2 {
+    -fx-fill: -fx-secondary-text-color;
+}
+
+.icon-2 {
+    -fx-opacity: .4;
+}
+
+.selected Label {
+    -fx-text-fill: -fx-primary-text-color;
+}
+
+.selected SVGPath {
+    -fx-fill: -fx-primary-color;
+}
+
+.background {
+    -fx-background-color: -fx-bg-color;
+    -fx-background-radius: 0 16px 16px 0;
+}
+
+.menu-tab {
+    -fx-background-color: -fx-card-color;
+    -fx-background-radius: 6px;
+}
+
+.window-actions {
+    -fx-stroke: none;
+    -fx-fill: -fx-bg-color;
+}
+
+.table-view .column-header, .table-view .column-header .filler, .table-view .column-header-background .filler, .nested-column-header, .table-view .column-header, .column-header-background {
+    -fx-background-color: -fx-separator-color;
+    -fx-border-width: 0;
+    -fx-background-radius: 6px 6px 0 0;
+}
+
+.table-view .filler, .table-view .column-header {
+    -fx-size: 40px;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell .text, .table-row-cell:hover .text {
+    -fx-fill: -fx-primary-text-color;
+}
+
+.table-row-cell:hover .text {
+    -fx-fill: -fx-secondary-text-color;
+}
+
+.table-row-cell:selected .text, .icon {
+    -fx-fill: -fx-primary-color;
+}
+
+.table-column {
+    -fx-padding: 0 0 0 5;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell {
+    -fx-cell-size: 44px;
+    -fx-background-color: -fx-card-color;
+    -fx-background-insets: 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view, .scroll-bar {
+    -fx-background-color: transparent;
+}
