@@ -2,7 +2,7 @@
 
 This JavaFX Dashboard is a flexible and versatile template, designed to be used as a starting point for your own custom dashboard projects. It features a theme changer with both dark and light modes, a customizable table builder, and a user-friendly interface.
 
-**[Features](#-features) • [Themes](#-themes) • [Theme Changer](#-theme-changer) • [Table Builder](#table-builder) • [Adding Tabs](#adding-tabs) • [License](#-license)**
+**[Features](#-features) • [Themes](#-themes) • [Theme Changer](#-theme-changer) • [Table Builder](#-table-builder) • [Adding Tabs](#-adding-tabs) • [License](#-license)**
 
 ![thumbnail](.github/thumbnail.png)
 
@@ -12,7 +12,7 @@ This JavaFX Dashboard is a flexible and versatile template, designed to be used 
 - Rounded movable window
 - Resizeable
 - [Theme Changer](#-theme-changer) (with local storage)
-- [Table Builder](#table-builder)
+- [Table Builder](#-table-builder)
 
 ## 🎨 Themes
 
@@ -66,7 +66,7 @@ How to structure the content of these files can be found in the [standard theme]
 
 After changing the theme in the dashboard, it is stored locally in `java.io.tmpdir` properties using the [LocalUserData](src/main/java/com/jannikbuscha/dashboard/user/LocalUserData.java) class.
 
-## Table Builder
+## 🛠️ Table Builder
 
 The table methods in FXUtils simplify the process of building tables and populating the TableView, making it easier to create a well-formatted table of data from the ObservableList.
 
@@ -90,7 +90,7 @@ TableView<User> table = FXUtil.createTable(data, columns);
 
 More context can be found for this in the [Options](src/main/java/com/jannikbuscha/dashboard/tab/Options.java)-Tab class.
 
-## Adding Tabs
+## 🗂️ Adding Tabs
 
 To create a new tab, you must first create a new `HBox` in the [Dashboard FXML](src/main/resources/com/jannikbuscha/dashboard/fxml/dashboard.fxml) as follows in the `VBox fx:id="vbxMenuNavigation"`:
 
