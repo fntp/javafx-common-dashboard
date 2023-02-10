@@ -2,7 +2,7 @@
 
 This JavaFX Dashboard is a flexible and versatile template, designed to be used as a starting point for your own custom dashboard projects. It features a theme changer with both dark and light modes, a customizable table builder, and a user-friendly interface.
 
-**[Features](#-features) • [Themes](#-themes) • [Theme Changer](#-theme-changer) • [Table Builder](#table-builder) • [Adding Tabs](#adding-tabs) • [License](#-license)**
+**[Features](#-features) • [Themes](#-themes) • [Theme Changer](#-theme-changer) • [Table Builder](#-table-builder) • [Adding Tabs](#-adding-tabs) • [License](#-license)**
 
 ![thumbnail](.github/thumbnail.png)
 
@@ -12,7 +12,7 @@ This JavaFX Dashboard is a flexible and versatile template, designed to be used 
 - Rounded movable window
 - Resizeable
 - [Theme Changer](#-theme-changer) (with local storage)
-- [Table Builder](#table-builder)
+- [Table Builder](#-table-builder)
 
 ## 🎨 Themes
 
