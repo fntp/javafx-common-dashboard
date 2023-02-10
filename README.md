@@ -2,7 +2,7 @@
 
 This JavaFX Dashboard is a flexible and versatile template, designed to be used as a starting point for your own custom dashboard projects. It features a theme changer with both dark and light modes, a customizable table builder, and a user-friendly interface.
 
-**[Features](#-features) • [Themes](#-themes) • [Theme Changer](#-theme-changer) • [Table Builder](#-table-builder) • [License](#-license)**
+**[Features](#-features) • [Themes](#-themes) • [Theme Changer](#-theme-changer) • [Table Builder](#-table-builder) • [Adding Tabs](#-adding-tabs) • [License](#-license)**
 
 ![thumbnail](.github/thumbnail.png)
 
@@ -29,7 +29,6 @@ To add a new theme, you need to create a new enumerated value in the [Theme](src
 
 ```java
 public enum Theme {
-
     STANDARD, BACKIFY, /* YOUR_NEW_THEME */;
     // ...
 }
@@ -71,6 +70,8 @@ After changing the theme in the dashboard, it is stored locally in `java.io.tmpd
 
 The table methods in FXUtils simplify the process of building tables and populating the TableView, making it easier to create a well-formatted table of data from the ObservableList.
 
+Example usage:
+
 ```java
 final ObservableList<User> data = FXCollections.observableArrayList(
         new User("Violet", 56, "USA"),
@@ -88,6 +89,35 @@ TableView<User> table = FXUtil.createTable(data, columns);
 ```
 
 More context can be found for this in the [Options](src/main/java/com/jannikbuscha/dashboard/tab/Options.java)-Tab class.
+
+## 🗂️ Adding Tabs
+
+To create a new tab, you must first create a new `HBox` in the [Dashboard FXML](src/main/resources/com/jannikbuscha/dashboard/fxml/dashboard.fxml) as follows in the `VBox fx:id="vbxMenuNavigation"`:
+
+```xml
+<HBox alignment="CENTER_LEFT" spacing="16.0" styleClass="sidebar-tab">
+    <StackPane maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0">
+        <!-- Your Icon (e.g. SVGPath) -->
+    </StackPane>
+    <Label styleClass="regular" text="Your New Tab" />
+</HBox>
+```
+
+Then the Tab class in the [Tab](src/main/java/com/jannikbuscha/dashboard/tab) package must be created as follows:
+
+```java
+public class YourNewTab extends StackPane {
+    public YourNewTab() {
+        this.getChildren().add(new Label(this.getClass().getSimpleName()));
+    }
+}
+```
+
+Finally, create an object in the `initialize()` method of the [Dashboard Controller](src/main/java/com/jannikbuscha/dashboard/controller/DashboardController.java) inside the tabs Pane array:
+
+```java
+Pane[] tabs = {new Home(), new Users(), new Builder(), new Options(), /*new YourNewTab()*/};
+```
 
 ## 📝 License
 
