@@ -15,7 +15,7 @@
     -fx-text-fill: -fx-primary-text-color;
 }
 
-.button, .window-actions, .sidebar-tab {
+.button, .window-actions, .sidebar-tab, .top-bar-icon, .combo-box, .check-box {
     -fx-cursor: hand;
 }
 
@@ -110,4 +110,68 @@
 
 .table-view, .scroll-bar {
     -fx-background-color: transparent;
+}
+
+.top-bar-icon SVGPath {
+    -fx-fill: -fx-secondary-text-color;
+}
+
+.combo-box-base .arrow, .combo-box-base:focused .arrow {
+    -fx-shape: "M2462.656-371.929l-4.267-4.268-4.268,4.268a1,1,0,0,1-1.414,0,1,1,0,0,1,0-1.415l4.95-4.949a1,1,0,0,1,.732-.293,1,1,0,0,1,.732.293l4.95,4.949a1,1,0,0,1,0,1.415,1,1,0,0,1-.707.293A1,1,0,0,1,2462.656-371.929Z";
+    -fx-background-color: -fx-primary-text-color;
+}
+
+.combo-box-base:focused .arrow {
+    -fx-rotate: 180;
+}
+
+.combo-box-popup .list-view .list-cell, .combo-box-popup .list-view {
+    -fx-background-color: -fx-bg-color;
+    -fx-border-width: 0;
+    -fx-padding: 5;
+}
+
+.combo-box-popup > .list-view {
+    -fx-padding: 0;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .dialog-container .combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: -fx-primary-color;
+}
+
+.combo-box .cell, .combo-box-popup .list-view .list-cell:hover {
+    -fx-text-fill: -fx-primary-text-color;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: -fx-secondary-text-color;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-text-fill: -fx-primary-text-color;
+}
+
+.combo-box, .check-box .box {
+    -fx-background-color: -fx-separator-color;
+}
+
+.check-box {
+    -fx-text-fill: -fx-primary-text-color;
+}
+
+.check-box .box {
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+}
+
+.check-box .mark {
+    -fx-shape: "M1.73,12.91 8.1,19.28 22.79,4.59 22.79,1.59 8.1,16.28 1.73,9.91";
+}
+
+.check-box:selected .mark {
+    -fx-background-color: -fx-primary-text-color;
+}
+
+.check-box:selected .box {
+    -fx-background-color: -fx-primary-color;
 }

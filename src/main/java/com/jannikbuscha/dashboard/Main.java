@@ -19,7 +19,6 @@ import java.io.IOException;
 public class Main extends Application {
 
     private final String name = "JavaFX Dashboard", version = "1.0";
-    public static final String PATH = "/com/jannikbuscha/dashboard";
 
     @Getter
     private static Main instance;
@@ -43,13 +42,13 @@ public class Main extends Application {
     private void createScene(Stage stage) throws IOException {
         this.stage = stage;
 
-        Parent root = FXMLLoader.load(getClass().getResource(PATH + "/fxml/dashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("fxml/dashboard.fxml"));
 
         scene = new Scene(root);
 
         loadTheme();
+        scene.getStylesheets().add(getClass().getResource("css/style.css").toExternalForm());
 
-        scene.getStylesheets().add(Main.class.getResource(PATH + "/css/style.css").toExternalForm());
         scene.setRoot(root);
         scene.setFill(Color.TRANSPARENT);
 
@@ -63,12 +62,15 @@ public class Main extends Application {
     }
 
     private void loadTheme() {
+        // Ignore CSS warnings
+        com.sun.javafx.util.Logging.getCSSLogger().setLevel(sun.util.logging.PlatformLogger.Level.OFF);
+
         if (!LocalUserData.existsFolder()) {
             LocalUserData.setProperty("theme", Theme.STANDARD.ordinal() + "");
             LocalUserData.setProperty("dark_mode", String.valueOf(false));
         }
 
-        LocalUserData.getProperty("theme").ifPresent(theme -> Theme.setCurrentTheme(Theme.values()[1], LocalUserData.getProperty("dark_mode").map(Boolean::valueOf).orElse(false)));
+        LocalUserData.getProperty("theme").ifPresent(theme -> Theme.setCurrentTheme(Theme.values()[Integer.parseInt(theme)], LocalUserData.getProperty("dark_mode").map(Boolean::valueOf).orElse(false)));
     }
 
     @Override

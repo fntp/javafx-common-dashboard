@@ -1,7 +1,11 @@
 package com.jannikbuscha.dashboard.util;
 
 import com.jannikbuscha.dashboard.Main;
+import javafx.application.Platform;
 import lombok.*;
+
+import java.util.Arrays;
+import java.util.List;
 
 @Getter
 @AllArgsConstructor
@@ -10,15 +14,15 @@ public enum Theme {
     STANDARD, BACKIFY;
 
     public String getThemeFile() {
-        return Theme.class.getResource(Main.PATH + "/css/theme/" + this.name().toLowerCase() + "/theme.css").toExternalForm();
+        return Main.class.getResource("css/theme/" + this.name().toLowerCase() + "/theme.css").toExternalForm();
     }
 
     public String getDarkFile() {
-        return Theme.class.getResource(Main.PATH + "/css/theme/" + this.name().toLowerCase() + "/dark.css").toExternalForm();
+        return Main.class.getResource("css/theme/" + this.name().toLowerCase() + "/dark.css").toExternalForm();
     }
 
     public String getLightFile() {
-        return Theme.class.getResource(Main.PATH + "/css/theme/" + this.name().toLowerCase() + "/light.css").toExternalForm();
+        return Main.class.getResource("css/theme/" + this.name().toLowerCase() + "/light.css").toExternalForm();
     }
 
     public String getName() {

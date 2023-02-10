@@ -37,7 +37,7 @@ public class FXUtil {
         });
     }
 
-    public static void windowActions(Stage stage, Pane min, Pane close) {
+    public static void windowActions(Stage stage, Node min, Node close) {
         min.setOnMouseClicked(e -> stage.setIconified(true));
         close.setOnMouseClicked(e -> System.exit(0));
     }

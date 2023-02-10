@@ -5,6 +5,7 @@ import com.jannikbuscha.dashboard.util.Theme;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.HBox;
@@ -17,7 +18,7 @@ public class Options extends StackPane {
 
     public Options() {
         ComboBox cbxTheme = new ComboBox();
-        CheckBox ccxDarkMode = new CheckBox();
+        CheckBox ccxDarkMode = new CheckBox("Dark Mode");
 
         // Prepare click event for theme change
         EventHandler<ActionEvent> themeClickEvent = e -> {
@@ -48,7 +49,10 @@ public class Options extends StackPane {
         cbxTheme.getSelectionModel().select(Integer.parseInt(LocalUserData.getProperty("theme").get()));
         ccxDarkMode.setSelected(LocalUserData.getProperty("dark_mode").map(Boolean::valueOf).orElse(false));
 
-        this.getChildren().addAll(new HBox(cbxTheme, ccxDarkMode));
+        HBox hbxTheme = new HBox(8, cbxTheme, ccxDarkMode);
+        hbxTheme.setAlignment(Pos.BASELINE_LEFT);
+
+        this.getChildren().addAll(hbxTheme);
     }
 
 }

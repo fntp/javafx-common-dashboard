@@ -44,22 +44,6 @@ public class LocalUserData {
         }
     }
 
-    public static void removeProperty(String key) {
-        initProperties();
-
-        if (!properties.containsKey(key)) {
-            return;
-        }
-
-        properties.remove(key);
-
-        try {
-            properties.store(new FileOutputStream(PROPERTIES_FILE), "Do not change anything here!");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     private static void initProperties() {
         if (properties != null) return;
 
