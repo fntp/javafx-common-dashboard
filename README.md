@@ -38,8 +38,8 @@ public enum Theme {
 Then create the corresponding CSS files:
 
 - `dark.css` (Color variables for the dark theme)
-- `light.css`(Color variables for the light theme)
-- `theme.css`(Semantic color variables and font for the theme)
+- `light.css` (Color variables for the light theme)
+- `theme.css` (Semantic color variables and font for the theme)
 
 in the [theme](src/main/resources/com/jannikbuscha/dashboard/css/theme) directory:
 
